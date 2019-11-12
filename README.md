@@ -36,16 +36,3 @@ A fim de entender melhor o ambiente de desenvolvimento de projetos em Data Scien
 'watchers',
 'timestamp_extract'
 'Readme'
-
-Todos os resultados:
-Organização responsável
-Tipo de organização responśavel
-Local (Cidade/Estado)
-Entidades relacionadas
-Motivação
-Trabalho realizado (Produção de dados, coleta de dados, organização, análise)
-Tecnologias utilizadas
-Forma de financiamento
-Canais de comunicação utilizados
-Assunto (Economia, Transparência, Legislação…)
-Impacto (Seria interessante mas é um conceito difícil de medir…)
