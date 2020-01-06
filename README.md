@@ -1,6 +1,8 @@
 # caracterizacao-ds-dados-abertos
 
-A fim de entender melhor o ambiente de desenvolvimento de projetos em Data Science - DS e tendo em vista o crescente incentivo para o engajamento social através do conceito de governo aberto, essa pesquisa tem por objetivo caracterizar aspectos do desenvolvimento de projetos em DS, como motivação, tecnologias, práticas e dificuldades no contexto de dados abertos no Brasil.
+Essa pesquisa tem por objetivo caracterizar, do ponto de vista prático, a comunidade em torno do consumo de dados abertos governamentais brasileiros, os desafios enfrentados e as soluções aplicadas. 
+
+Como contribuição esperamos uma descrição sistemática de características como autores do projeto, contribuidores, local de realização, tecnologias utilizadas, fonte e contexto dos dados (economia, educação, entre outros), juntamente a um catálogo que apresente os problemas recorrentes relacionados à engenharia de software e ciência de dados, assim como suas respectivas soluções. A existência desse catálogo poderá beneficiar instituições do governo, que buscam otimizar seus serviços de divulgação de dados abertos, e a própria sociedade civil através do compartilhamento e reuso de soluções.
 
 ## Metodologia de Extração
 
@@ -11,7 +13,7 @@ A fim de entender melhor o ambiente de desenvolvimento de projetos em Data Scien
 - Seleção dos resultados através da aplicação de critérios de inclusão e exclusão.
 
 
-### Estrutura dop catálogo de resultados
+### Estrutura do catálogo de resultados
 - Resultados do github:
 
 'id',
