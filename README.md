@@ -1,10 +1,12 @@
-# caracterizacao-ds-dados-abertos
+# Caracterização da Comunidade que Utiliza de DadosAbertos Brasileiros
 
 Essa pesquisa tem por objetivo caracterizar, do ponto de vista prático, a comunidade em torno do consumo de dados abertos governamentais brasileiros, os desafios enfrentados e as soluções aplicadas. 
 
 Como contribuição esperamos uma descrição sistemática de características como autores do projeto, contribuidores, local de realização, tecnologias utilizadas, fonte e contexto dos dados (economia, educação, entre outros), juntamente a um catálogo que apresente os problemas recorrentes relacionados à engenharia de software e ciência de dados, assim como suas respectivas soluções. A existência desse catálogo poderá beneficiar instituições do governo, que buscam otimizar seus serviços de divulgação de dados abertos, e a própria sociedade civil através do compartilhamento e reuso de soluções.
 
-## Metodologia de Extração
+## Análise Quantitativa
+
+### Metodologia de Extração
 
 - Definição das palavras de busca
 - Definição das fontes de dados
@@ -38,3 +40,8 @@ Como contribuição esperamos uma descrição sistemática de características c
 'watchers',
 'timestamp_extract'
 'Readme'
+
+## Análise Qualitativa
+
+### Metologia para entrevistas
+
