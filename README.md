@@ -1,4 +1,4 @@
-# Caracterização da Comunidade que Utiliza de DadosAbertos Brasileiros
+# Caracterização da Comunidade que Utiliza de Dados Abertos Brasileiros
 
 Essa pesquisa tem por objetivo caracterizar, do ponto de vista prático, a comunidade em torno do consumo de dados abertos governamentais brasileiros, os desafios enfrentados e as soluções aplicadas. 
 
