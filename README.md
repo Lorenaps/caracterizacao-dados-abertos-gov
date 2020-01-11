@@ -1,6 +1,7 @@
 # Caracterização da Comunidade que Utiliza de Dados Abertos Brasileiros
 
 Mestranda: Lorena Pereira
+
 Orientador: João Arthur Brunet Monteiro
 
 Essa pesquisa tem por objetivo caracterizar, do ponto de vista prático, a comunidade em torno do consumo de dados abertos governamentais brasileiros, os desafios enfrentados e as soluções aplicadas. 
@@ -19,12 +20,12 @@ Como contribuição esperamos uma descrição sistemática de características c
 
 ### Estrutura do catálogo de resultados
 - Organização responsável (autores do projeto)
-- Tipo de organização responsável;
+- Tipo de organização responsável (Universidade, cidadão, órgão governamental);
 - Contribuidores;
 - Local de realização (Cidade/Estado);
 - Tecnologias utilizadas;
 - Fonte dos dados;
-- Contexto dos dados(Economia, educação, entre outros).
+- Contexto dos dados(Economia, educação, entre outros);
 - Trabalho realizado (Produção de novos dados, coleta de dados, limpeza, organização ou análise);
 - Data da Extração.
 
