@@ -1,8 +1,16 @@
-# caracterizacao-ds-dados-abertos
+# Caracterização da Comunidade que Utiliza de Dados Abertos Brasileiros
 
-A fim de entender melhor o ambiente de desenvolvimento de projetos em Data Science - DS e tendo em vista o crescente incentivo para o engajamento social através do conceito de governo aberto, essa pesquisa tem por objetivo caracterizar aspectos do desenvolvimento de projetos em DS, como motivação, tecnologias, práticas e dificuldades no contexto de dados abertos no Brasil.
+Mestranda: Lorena Pereira
 
-## Metodologia de Extração
+Orientador: João Arthur Brunet Monteiro
+
+Essa pesquisa tem por objetivo caracterizar, do ponto de vista prático, a comunidade em torno do consumo de dados abertos governamentais brasileiros, os desafios enfrentados e as soluções aplicadas. 
+
+Como contribuição esperamos uma descrição sistemática de características como autores do projeto, contribuidores, local de realização, tecnologias utilizadas, fonte e contexto dos dados (economia, educação, entre outros), juntamente a um catálogo que apresente os problemas recorrentes relacionados à engenharia de software e ciência de dados, assim como suas respectivas soluções. A existência desse catálogo poderá beneficiar instituições do governo, que buscam otimizar seus serviços de divulgação de dados abertos, e a própria sociedade civil através do compartilhamento e reuso de soluções.
+
+## 1ª Etapa: Análise Quantitativa
+
+### Metodologia de Extração
 
 - Definição das palavras de busca
 - Definição das fontes de dados
@@ -10,29 +18,18 @@ A fim de entender melhor o ambiente de desenvolvimento de projetos em Data Scien
 - Colocar os resultados no catálogo, preenchendo os devidos campos
 - Seleção dos resultados através da aplicação de critérios de inclusão e exclusão.
 
+### Estrutura do catálogo de resultados
+- Organização responsável (autores do projeto)
+- Tipo de organização responsável (Universidade, cidadão, órgão governamental);
+- Contribuidores;
+- Local de realização (Cidade/Estado);
+- Tecnologias utilizadas;
+- Fonte dos dados;
+- Contexto dos dados(Economia, educação, entre outros);
+- Trabalho realizado (Produção de novos dados, coleta de dados, limpeza, organização ou análise);
+- Data da Extração.
 
-### Estrutura dop catálogo de resultados
-- Resultados do github:
+## 2ª Etapa: Análise Qualitativa
 
-'id',
-'full_name',
-'description',
-'owner_type',
-'owner_url',
-'owner_html_url',
-'html_url',
-'url',
-'fork',
-'created_at',
-'updated_at',
-'size',
-'stargazers_count',
-'language',
-'has_issues',
-'has_wiki',
-'forks_count',
-'forks',
-'open_issues',
-'watchers',
-'timestamp_extract'
-'Readme'
+### Metologia para entrevistas
+Em desenvolvimento.
