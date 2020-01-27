@@ -29,7 +29,21 @@ Como contribuição esperamos uma descrição sistemática de características c
 - Trabalho realizado (Produção de novos dados, coleta de dados, limpeza, organização ou análise);
 - Data da Extração.
 
+**Construção do catálogo**
+Tipo de Organização:
+
+	Organização governamental
+	Organização civil
+
+Trabalho_realizado:
+
+	Disposição - Cobre disposição de dados processados como o caso dos mapas, ou a criação de um pacote para facilitar baixar dados
+	Mapeamento de iniciativas - Mapeia iniciativas e aplicações que usam dados, fonte de dados
+	Análise
+	Documentacao de processo - Documenta um processo para
+    
 ## 2ª Etapa: Análise Qualitativa
 
 ### Metologia para entrevistas
 Em desenvolvimento.
+
