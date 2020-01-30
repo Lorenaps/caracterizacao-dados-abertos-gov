@@ -19,29 +19,30 @@ Como contribuição esperamos uma descrição sistemática de características c
 - Seleção dos resultados através da aplicação de critérios de inclusão e exclusão.
 
 ### Estrutura do catálogo de resultados
-- Organização responsável (autores do projeto)
-- Tipo de organização responsável (Universidade, cidadão, órgão governamental);
-- Contribuidores;
-- Local de realização (Cidade/Estado);
-- Tecnologias utilizadas;
-- Fonte dos dados;
-- Contexto dos dados(Economia, educação, entre outros);
-- Trabalho realizado (Produção de novos dados, coleta de dados, limpeza, organização ou análise);
-- Data da Extração.
-
-**Construção do catálogo**
-Tipo de Organização:
-
+- Tipo de organização:
 	Organização governamental
 	Organização civil
+	
+- Contribuidores
 
-Trabalho_realizado:
+- Local (Cidade/Estado)
 
-	Disposição - Cobre disposição de dados processados como o caso dos mapas, ou a criação de um pacote para facilitar baixar dados
-	Mapeamento de iniciativas - Mapeia iniciativas e aplicações que usam dados, fonte de dados
-	Análise
-	Documentacao de processo - Documenta um processo para
-    
+- Tecnologias utilizadas
+
+- Fonte dos dados: 
+	- A fonte dos dados sobre o qual o repositório trata de alguma forma (Câmara dos Deputados do Brasil, IBGE,  entre outros)
+	
+- Contexto dos dados
+	- O tema sobre o qual os dados representam de alguma forma (Legislativo, Educação, entre outros)
+	
+- Trabalho realizado:
+	- Disposição - Cobre disposição de dados processados como o caso dos mapas, ou a criação de um pacote para facilitar baixar dados;
+	- Mapeamento de iniciativas - Mapeia iniciativas, aplicações, fonte de dados relacionadas a dados abertos governamentais;
+	- Análise - Análisa uma base de dados buscando informação;
+	- Documentacao: Documenta algum tipo de processo ou boa prática a ser reutilizada.
+	
+- Data da Extração.
+
 ## 2ª Etapa: Análise Qualitativa
 
 ### Metologia para entrevistas
