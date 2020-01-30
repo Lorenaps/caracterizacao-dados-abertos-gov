@@ -33,7 +33,7 @@ Como contribuição esperamos uma descrição sistemática de características c
 	- A fonte dos dados sobre o qual o repositório trata de alguma forma (Câmara dos Deputados do Brasil, IBGE,  entre outros)
 	
 - Contexto dos dados
-	- O tema sobre o qual os dados tratam de alguma forma (Legislativo, Educação, entre outros)
+	- O tema sobre o qual os dados representam de alguma forma (Legislativo, Educação, entre outros)
 	
 - Trabalho realizado:
 	- Disposição - Cobre disposição de dados processados como o caso dos mapas, ou a criação de um pacote para facilitar baixar dados;
