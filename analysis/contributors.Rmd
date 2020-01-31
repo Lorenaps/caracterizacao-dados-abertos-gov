@@ -1,0 +1,95 @@
+---
+title: "Contribuidores dos Repositórios"
+author: "Lorena Pereira"
+date: "January 31, 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(viridis)
+library(networkD3)
+
+```
+
+## Contribuidores dos Repositórios
+
+
+```{r}
+
+contributors_file <- read_csv("../data/contributors_1580337373.csv")
+
+glimpse(contributors_file)
+```
+
+## Montando Nodes
+```{r}
+
+repositories <- contributors_file %>% 
+                    select(repo_id, repo_name) %>% 
+                    group_by(repo_id, repo_name) %>% 
+                    summarise(count = n()) %>% 
+                    arrange(desc(count)) %>%
+                    mutate(type = 'repo') %>%
+                    select(id = repo_id, name = repo_name, count, type)
+
+contributors <- contributors_file %>% 
+                    select(contributor_id, contributor_login) %>% 
+                    group_by(contributor_id, contributor_login) %>% 
+                    summarise(count = n()) %>% 
+                    arrange(desc(count)) %>%
+                    mutate(type = 'user') %>% 
+                    select(id = contributor_id, name = contributor_login, count, type)
+
+nodes <- rbind(repositories, contributors)
+
+nodes <- rowid_to_column(nodes, "index") %>% 
+        mutate(index = index -1)
+
+```
+
+## Montando links
+
+```{r}
+
+links <- contributors_file %>% 
+          mutate(value = 1, source = contributor_id, target = repo_id) %>% 
+          select(source, target, value)
+
+temp <- inner_join(links, nodes, by=c('source'='id')) %>%
+        mutate(source_index = index)
+
+temp <- inner_join(temp, nodes, by=c('target'='id')) %>%
+        mutate(target_index = index.y)
+
+links <- temp %>% 
+  mutate(source = source_index, target = target_index, value) %>%
+  select(source, target, value)
+
+```
+
+## Gerando grafo
+
+```{r}
+
+forceNetwork(Links = links, Nodes = nodes,
+            Source = "source", Target = "target",
+            Value = "value", NodeID = "name",
+            Group = "count", opacity = 0.8)
+```
+
+
+
+
+```{r}
+# Load data
+data(MisLinks)
+data(MisNodes)
+
+# Plot
+forceNetwork(Links = MisLinks, Nodes = MisNodes,
+            Source = "source", Target = "target",
+            Value = "value", NodeID = "name",
+            Group = "group", opacity = 0.8)
+```
