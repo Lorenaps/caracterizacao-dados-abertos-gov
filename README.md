@@ -45,6 +45,4 @@ Como contribuição esperamos uma descrição sistemática de características c
 
 ## 2ª Etapa: Análise Qualitativa
 
-### Metologia para entrevistas
-Em desenvolvimento.
-
+Essa etapa será desenvolvida assim que terminados a análise dos dados extraídos.
