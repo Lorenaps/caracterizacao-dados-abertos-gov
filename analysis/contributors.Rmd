@@ -1,56 +1,71 @@
 ---
-title: "Contribuidores dos Repositórios"
+title: 'Dados Abertos Governamentais: Repositórios e Contribuidores'
 author: "Lorena Pereira"
 date: "January 31, 2020"
-output: html_document
+output:
+  html_document: default
+  pdf_document: default
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE, message=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(viridis)
 library(networkD3)
+library(here)
 
 ```
 
-## Contribuidores dos Repositórios
-
-
-```{r}
+## Pessoas contribuidoras nos repositórios
+```{r message = FALSE}
 
 contributors_file <- read_csv("../data/contributors_1580337373.csv")
 
 glimpse(contributors_file)
 ```
 
-## Montando Nodes
+## Filtrando os repositórios com contribuição por mais de uma pessoa
+```{r}
+
+ids <- contributors_file %>% 
+  group_by(repo_id, repo_name) %>% 
+  summarise(count = n()) %>%
+  filter(count > 1) %>%
+  select(repo_id)
+
+ids <- c(ids$repo_id)
+
+contributors_file <- contributors_file %>% filter(repo_id %in% ids)
+
+```
+
+## Montando os nós
 ```{r}
 
 repositories <- contributors_file %>% 
-                    select(repo_id, repo_name) %>% 
-                    group_by(repo_id, repo_name) %>% 
-                    summarise(count = n()) %>% 
-                    arrange(desc(count)) %>%
-                    mutate(type = 'repo') %>%
-                    select(id = repo_id, name = repo_name, count, type)
+  select(repo_id, repo_name) %>% 
+  group_by(repo_id, repo_name) %>% 
+  summarise(count = n()) %>% 
+  arrange(desc(count)) %>%
+  mutate(type = 'repo') %>%
+  select(id = repo_id, name = repo_name, count, type)
 
 contributors <- contributors_file %>% 
-                    select(contributor_id, contributor_login) %>% 
-                    group_by(contributor_id, contributor_login) %>% 
-                    summarise(count = n()) %>% 
-                    arrange(desc(count)) %>%
-                    mutate(type = 'user') %>% 
-                    select(id = contributor_id, name = contributor_login, count, type)
+  select(contributor_id, contributor_login) %>% 
+  group_by(contributor_id, contributor_login) %>% 
+  summarise(count = n()) %>% 
+  arrange(desc(count)) %>%
+  mutate(type = 'user') %>% 
+  select(id = contributor_id, name = contributor_login, count, type)
 
 nodes <- rbind(repositories, contributors)
 
 nodes <- rowid_to_column(nodes, "index") %>% 
-        mutate(index = index -1)
+  mutate(index = index -1)
 
 ```
 
-## Montando links
-
+## Montando os links
 ```{r}
 
 links <- contributors_file %>% 
@@ -69,27 +84,49 @@ links <- temp %>%
 
 ```
 
-## Gerando grafo
+## Gerando rede de contribuições
 
-```{r}
+```{r message = FALSE}
 
-forceNetwork(Links = links, Nodes = nodes,
+network <- forceNetwork(Links = links, Nodes = nodes,
             Source = "source", Target = "target",
             Value = "value", NodeID = "name",
-            Group = "count", opacity = 0.8)
+            Group = "type", opacity = 0.8, 
+            fontSize = 24, charge=-3, zoom = T,
+            colourScale = JS('d3.scaleOrdinal().domain(["repo", "user"]).range(["#FE4A31", "#2D2E2C"])')
+)
+
+saveNetwork(network, 'network.html')
+
+network
 ```
 
+## Qual a frequência de contribuintes?
+```{r message = FALSE}
 
+repositories %>% 
+  select(numero_contribuintes = count) %>% 
+  group_by(numero_contribuintes) %>% 
+  summarise(frequencia = n())
 
+```
 
+## Qual a frequência de contribuições?
 ```{r}
-# Load data
-data(MisLinks)
-data(MisNodes)
 
-# Plot
-forceNetwork(Links = MisLinks, Nodes = MisNodes,
-            Source = "source", Target = "target",
-            Value = "value", NodeID = "name",
-            Group = "group", opacity = 0.8)
+contributors %>% 
+  select(numero_contribuicoes = count) %>% 
+  group_by(numero_contribuicoes) %>% 
+  summarise(frequencia = n()) %>%
+  ggplot(mapping = aes(x = numero_contribuicoes, y = frequencia, label=frequencia)) + 
+                geom_line() + 
+                xlab("Quantidade de contribuições") + 
+                ylab("Frequencia") + 
+                geom_label() + 
+                scale_x_continuous(breaks = seq(1,10,1))
+
 ```
+
+#### Por hora
+Podemos observar que a rede de contribuições é formada por muitos grupos separados. 
+Temos em maioria repositórios com 2 contribuintes. E poucos repositórios que compartilham de uma mesma pessoa contribuidora.
