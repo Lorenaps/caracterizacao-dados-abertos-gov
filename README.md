@@ -4,6 +4,6 @@ Mestranda: Lorena Pereira
 
 Orientador: João Arthur Brunet Monteiro
 
-Essa pesquisa tem por objetivo caracterizar projetos de software da comunidade em torno do consumo de dados abertos governamentais brasileiros, os desafios enfrentados e as soluções aplicadas. 
+Essa pesquisa tem por objetivo caracterizar projetos de tecnologia cívica que utilizam dados abertos governamentais, mapeando informações quantitativas como tecnologias utilizadas, tipo de organização e trabalho realizado e qualitativas como desafios e soluções aplicadas.
 
-Como contribuição esperamos uma descrição sistemática de características como autores do projeto, contribuidores, local de realização, tecnologias utilizadas, fonte e contexto dos dados (economia, educação, entre outros), juntamente a um catálogo que apresente os problemas recorrentes relacionados à engenharia de software e ciência de dados, assim como suas respectivas soluções. A existência desse catálogo poderá beneficiar instituições do governo, que buscam otimizar seus serviços de divulgação de dados abertos, e a própria sociedade civil através do compartilhamento e reuso de soluções.
+Para garantir a qualidade na caracterização o escopo do projeto será circunscrito em torno de projetos relacionados a área de educação. O projeto atual estende o conhecimento pesquisas anteriores pois se baseia em uma extração de dados mais abrangente a automática a partir de palavras chaves. Sua metodologia busca primeiramente um panorama dos projetos para depois afunilar o conhecimento através de entrevistas com seus desenvolvedores.
