@@ -1,4 +1,4 @@
-# Caracterização da Comunidade que Utiliza de Dados Abertos Brasileiros
+# Caracterização da comunidade que utiliza de dados abertos governamentais sobre a educação brasileira
 
 Mestranda: Lorena Pereira
 
