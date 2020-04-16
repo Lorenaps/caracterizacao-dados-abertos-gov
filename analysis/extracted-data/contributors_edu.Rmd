@@ -112,5 +112,3 @@ repositories %>%
 ```
 
 #### Por hora
-Podemos observar que a rede de contribuições é formada por muitos grupos separados. 
-Temos em maioria repositórios com 2 contribuintes. E poucos repositórios que compartilham de uma mesma pessoa contribuidora.
