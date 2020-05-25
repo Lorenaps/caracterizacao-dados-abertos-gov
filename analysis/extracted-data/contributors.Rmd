@@ -19,7 +19,7 @@ library(here)
 ## Pessoas contribuidoras nos repositórios
 ```{r message = FALSE}
 
-contributors_file <- read_csv("../data/contributors_1580337373.csv")
+contributors_file <- read_csv("../../data/contributors_edu.csv")
 
 glimpse(contributors_file)
 ```
@@ -92,11 +92,11 @@ network <- forceNetwork(Links = links, Nodes = nodes,
             Source = "source", Target = "target",
             Value = "value", NodeID = "name",
             Group = "type", opacity = 0.8, 
-            fontSize = 24, charge=-3, zoom = T,
+            fontSize = 24, charge=-7, zoom = T,
             colourScale = JS('d3.scaleOrdinal().domain(["repo", "user"]).range(["#FE4A31", "#2D2E2C"])')
 )
 
-saveNetwork(network, 'network.html')
+saveNetwork(network, 'network_edu.html')
 
 network
 ```
@@ -110,23 +110,3 @@ repositories %>%
   summarise(frequencia = n())
 
 ```
-
-## Qual a frequência de contribuições?
-```{r}
-
-contributors %>% 
-  select(numero_contribuicoes = count) %>% 
-  group_by(numero_contribuicoes) %>% 
-  summarise(frequencia = n()) %>%
-  ggplot(mapping = aes(x = numero_contribuicoes, y = frequencia, label=frequencia)) + 
-                geom_line() + 
-                xlab("Quantidade de contribuições") + 
-                ylab("Frequencia") + 
-                geom_label() + 
-                scale_x_continuous(breaks = seq(1,10,1))
-
-```
-
-#### Por hora
-Podemos observar que a rede de contribuições é formada por muitos grupos separados. 
-Temos em maioria repositórios com 2 contribuintes. E poucos repositórios que compartilham de uma mesma pessoa contribuidora.
