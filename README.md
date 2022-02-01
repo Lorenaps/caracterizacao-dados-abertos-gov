@@ -4,4 +4,4 @@ Mestranda: Lorena Pereira
 
 Orientador: João Arthur Brunet Monteiro
 
-Essa pesquisa tem por objetivo caracterizar projetos de tecnologia cívica que utilizam dados abertos governamentais na área de educação, mapeando informações quantitativas como tecnologias utilizadas, tipo de organização e trabalho realizado e qualitativas como desafios recorrentes e soluções aplicadas. O projeto atual estende o conhecimento de pesquisas anteriores pois se baseia em uma extração de dados mais abrangente a automática a partir de palavras chaves. O método de pesquisa aplicado busca primeiramente um panorama quantitativo dos projetos, para depois afunilar o conhecimento através de entrevistas com seus desenvolvedores.
+O objetivo dessa pesquisa foi caracterizar a comunidade que utiliza os dados abertos governamentais brasileiros relacionados à educação, entendendo a sua dinâmica a partir de informações sobre os repositórios dos projetos de software e da experiência de pessoas participantes dessa comunidade.
