@@ -1,6 +1,6 @@
 # Caracterização da Comunidade que Utiliza Dados Abertos Governamentais Sobre a Educação Brasileira
 
-Repositório do projeto de pesquisa realizado e submetido à Coordenação do Curso de Pós-Graduação em Ciência da Computação da Universidade Federal de Campina Grande - Campus I como parte dos requisitos necessários para obtenção do grau de Mestre em Ciência da Computação 
+Repositório do projeto de pesquisa realizado Programa de Pós-Graduação em Ciência da Computação da Universidade Federal de Campina Grande - Campus I.
 
 Mestranda: Lorena Pereira
 
