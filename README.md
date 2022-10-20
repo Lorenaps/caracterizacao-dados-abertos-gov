@@ -11,3 +11,5 @@ Ao longo dos anos, sociedade civil e entidades governamentais têm se esforçado
 <img width="1100" alt="bi" src="https://user-images.githubusercontent.com/9660774/153536700-2bd44d47-7757-4c52-9b63-64ce49bf1249.PNG">
 
 Para permitir um compartilhamento mais amplo da pesquisa construímos uma visualização interativa dos resultados e está disponível de forma online através [desse link.](https://app.powerbi.com/view?r=eyJrIjoiNWMxM2E1YmYtMTRkNS00Yjk1LWE3YmItYjg2M2Y5OTI0MGI5IiwidCI6ImRmZGE4NzZjLWM1YjMtNDdmYi1iNDFlLTljNTllYTUxZWE2OCJ9&pageName=ReportSection072b8ca46d1cc7223490)
+
+A dissertação completa também pode ser encontrada [nesse link.](http://dspace.sti.ufcg.edu.br:8080/jspui/handle/riufcg/25581)
